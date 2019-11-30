@@ -1,0 +1,4 @@
+# Spring WebFluxのWebFilterのデモ実装
+
+Spring WebFluxではリクエストごとにThreadが確保されるわけではないので、Filterでの処理の結果をThread Local変数に入れておく手法が使えません。
+このリポジトリには、代替としてReactorのContextを使う方法のデモコードが置かれています。
